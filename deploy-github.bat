@@ -6,8 +6,8 @@ echo ========================================================
 echo.
 echo Your Git user email is configured as: nithin.ase22@gmail.com
 echo.
-set /p REPO_NAME="Enter your GitHub repository name [default: NithinReddy22.github.io]: "
-if "%REPO_NAME%"=="" set REPO_NAME=NithinReddy22.github.io
+set /p REPO_NAME="Enter your GitHub repository name [default: portfolio]: "
+if "%REPO_NAME%"=="" set REPO_NAME=portfolio
 
 set REMOTE_URL=https://github.com/NithinReddy22/%REPO_NAME%.git
 
