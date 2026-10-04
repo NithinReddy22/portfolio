@@ -30,7 +30,7 @@ http://localhost:8080/
 
 ## 🌐 Deployment Instructions
 
-### Method 1: Deploy to GitHub Pages (Recommended — 100% Free & Permanent)
+### Method 1: Deploy to GitHub Pages (Recommended - 100% Free & Permanent)
 
 1. Go to [GitHub.com/new](https://github.com/new) and create a new repository:
    - **Repository Name**: `NithinReddy22.github.io` *(for root domain https://nithinreddy22.github.io)*  

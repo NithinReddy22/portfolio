@@ -198,12 +198,12 @@ EQUIPPED ARSENAL:
 `,
     papers: `
 MISSION LOG // UNLOCKED PUBLICATIONS:
-[1] IEEE INSTCON 2026 (First Author):
+[1] IEEE INSTCON 2026 (Published):
     "YOLOv8-Based Real-Time Patient Safety Monitoring with Temporal Analysis and Automated Alerts"
     DOI: 10.1109/INSTCON.2026 (ieeexplore.ieee.org/document/11691839)
-[2] IEEE SCEECS 2026 (First Author):
+[2] IEEE SCEECS 2026 (Published):
     "YOLOv8-Driven Spatio-Temporal Framework for Real-Time Detection of Risk-Prone Patient Movements"
-[3] Springer Nature - ESPR 2026:
+[3] Springer Nature - ESPR 2026 (Published):
     "Advancing Sustainable Seaweed Production: Linking Technology, Policy, and Ecology"
 [4] REPO: Clinical-TTA-Edge:
     Unsupervised Test-Time Adaptation for Edge YOLOv8 (github.com/NithinReddy22/clinical-tta-edge)
