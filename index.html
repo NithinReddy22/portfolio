@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithin Reddy | Ready Player One Portfolio | Systems & AI Researcher</title>
+  <meta name="description" content="Portfolio of Puluputturi Nithin Reddy — Software Systems Engineer & AI Researcher specializing in Edge Computer Vision, Test-Time Adaptation, and Distributed Storage Engines.">
+  <meta name="keywords" content="Nithin Reddy, Computer Vision, Test-Time Adaptation, Distributed Systems, C++20, Raft, LSM Tree, YOLOv8, Amrita, Fall 2027">
+  <meta name="author" content="Puluputturi Nithin Reddy">
+
+  <!-- Google Fonts: Retro Arcade & Pixel Terminal Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-enabled scanlines-enabled">
+
+  <!-- Scanlines & CRT Screen Vignette Overlays -->
+  <div class="crt-overlay" id="crtOverlay"></div>
+  <div class="scanlines" id="scanlineOverlay"></div>
+
+  <!-- Retro Cyber Grid Background -->
+  <div class="cyber-grid"></div>
+
+  <!-- Audio Controls & HUD Toggles Bar -->
+  <header class="hud-topbar">
+    <div class="hud-brand">
+      <span class="status-indicator"></span>
+      <span class="hud-brand-text">OASIS // v2.026.NET</span>
+    </div>
+
+    <div class="hud-controls">
+      <button class="pixel-btn micro-btn" id="sfxToggle" title="Toggle 8-bit Audio Synthesizer">
+        <span class="icon">🔊</span> <span class="btn-label">SFX: ON</span>
+      </button>
+      <button class="pixel-btn micro-btn" id="crtToggle" title="Toggle CRT Filter & Scanlines">
+        <span class="icon">📺</span> <span class="btn-label">CRT: ON</span>
+      </button>
+      <a href="Nithin_Reddy_Resume.pdf" download class="pixel-btn micro-btn gold-btn" id="resumeBtn">
+        <span class="icon">💾</span> <span class="btn-label">RESUME.PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="oasis-container">
+
+    <!-- HERO PROFILE HUD -->
+    <section class="pixel-panel hero-panel" id="hero">
+      <div class="panel-header">
+        <span class="panel-tag">[PLAYER PROFILE]</span>
+        <span class="panel-status">CONNECTED TO SERVER: NORTH_AMERICA</span>
+      </div>
+
+      <div class="hero-grid">
+        <!-- Avatar Box -->
+        <div class="avatar-card">
+          <div class="avatar-frame">
+            <img src="avatar.jpg" alt="Nithin Reddy Cyberpunk Pixel Avatar" class="avatar-img" id="playerAvatar">
+            <div class="avatar-rank-badge">LVL 22</div>
+          </div>
+          <div class="avatar-meta">
+            <div class="player-handle">@NithinReddy22</div>
+            <div class="player-guild">GUILD: PSIOG DIGITAL // AMRITA CSE</div>
+          </div>
+        </div>
+
+        <!-- Bio & Stat Gauges -->
+        <div class="hero-details">
+          <div class="title-marquee">
+            <h1 class="player-name">PULUPUTTURI NITHIN REDDY</h1>
+            <p class="player-class">CLASS: SOFTWARE SYSTEMS ENGINEER & AI RESEARCHER</p>
+          </div>
+
+          <p class="hero-mission-statement">
+            Architecting high-throughput distributed engines (C++20 LSM-Trees, Raft consensus) and real-time edge vision architectures (YOLOv8 + Test-Time Adaptation). Bridging low-level systems reliability with self-calibrating clinical AI.
+          </p>
+
+          <!-- RPG Attribute Stats -->
+          <div class="rpg-stat-container">
+            <div class="stat-row">
+              <div class="stat-label">
+                <span class="stat-name">QUANT APTITUDE [GRE]</span>
+                <span class="stat-val gold-text">170 / 170 [MAXED 100%]</span>
+              </div>
+              <div class="pixel-meter"><div class="meter-fill fill-gold" style="width: 100%;"></div></div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label">
+                <span class="stat-name">SYSTEMS STABILITY [RAFT / LSM]</span>
+                <span class="stat-val cyan-text">99.9% RELIABILITY</span>
+              </div>
+              <div class="pixel-meter"><div class="meter-fill fill-cyan" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label">
+                <span class="stat-name">EDGE ACCELERATION [TTA GATED]</span>
+                <span class="stat-val green-text">50-80% COMPUTE SAVED</span>
+              </div>
+              <div class="pixel-meter"><div class="meter-fill fill-green" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label">
+                <span class="stat-name">RESEARCH PROGRESS [PUBLICATIONS]</span>
+                <span class="stat-val magenta-text">3 / 3 UNLOCKED</span>
+              </div>
+              <div class="pixel-meter"><div class="meter-fill fill-magenta" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="hero-actions">
+            <a href="#quests" class="pixel-btn primary-btn"><span class="icon">📜</span> QUEST LOG</a>
+            <a href="#inventory" class="pixel-btn secondary-btn"><span class="icon">⚔️</span> ARSENAL</a>
+            <a href="#terminal" class="pixel-btn cyan-btn"><span class="icon">💻</span> OASIS CLI</a>
+            <a href="#contact" class="pixel-btn pink-btn"><span class="icon">📡</span> TRANSMIT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY TROPHIES / HIGH SCORES -->
+    <section class="trophy-rack" id="achievements">
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <div class="trophy-data">
+          <div class="trophy-score">333 / 340</div>
+          <div class="trophy-title">GRE SCORE (170Q 100th%)</div>
+        </div>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">🎖️</div>
+        <div class="trophy-data">
+          <div class="trophy-score">BAND 7.5</div>
+          <div class="trophy-title">IELTS ACADEMIC (C1 LEVEL)</div>
+        </div>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">📜</div>
+        <div class="trophy-data">
+          <div class="trophy-score">3 PAPERS</div>
+          <div class="trophy-title">IEEE & SPRINGER NATURE</div>
+        </div>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">⚡</div>
+        <div class="trophy-data">
+          <div class="trophy-score">10,592 PARAMS</div>
+          <div class="trophy-title">CLINICAL-TTA-EDGE TUNED</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEST LOG: PUBLICATIONS & RESEARCH PROJECTS -->
+    <section class="pixel-panel section-panel" id="quests">
+      <div class="panel-header">
+        <span class="panel-tag">[MISSION LOG: RESEARCH & PROJECTS]</span>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="ai">AI & VISION</button>
+          <button class="filter-btn" data-filter="systems">SYSTEMS</button>
+        </div>
+      </div>
+
+      <div class="quests-grid">
+
+        <!-- Quest 1: Clinical-TTA-Edge -->
+        <article class="quest-card quest-legendary" data-category="ai">
+          <div class="quest-badge">LEGENDARY REPO // AI & TTA</div>
+          <h3 class="quest-title">Clinical-TTA-Edge: Unsupervised Test-Time Adaptation</h3>
+          <p class="quest-desc">
+            Engineered an unsupervised Test-Time Adaptation engine for edge YOLOv8 detectors to resolve clinical domain shift (night illumination, camera motion blur, low contrast) without target-domain labels or cloud retraining.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">TENT Entropy Gating (&tau;=0.38)</span>
+            <span class="pill">SHOT InfoMax</span>
+            <span class="pill">10,592 Normalization Params</span>
+            <span class="pill">50-80% Compute Saved</span>
+            <span class="pill">99.66% Frozen Weights</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://github.com/NithinReddy22/clinical-tta-edge" target="_blank" rel="noopener" class="pixel-btn small-btn primary-btn">
+              <span>VIEW REPO</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Quest 2: IEEE INSTCON 2026 -->
+        <article class="quest-card quest-epic" data-category="ai">
+          <div class="quest-badge">PEER-REVIEWED // IEEE INSTCON 2026</div>
+          <h3 class="quest-title">Real-Time Patient Safety Monitoring with Temporal Dynamics</h3>
+          <p class="quest-desc">
+            First-author paper presenting an edge YOLOv8 framework that detects patient falls and distress by tracking spatial bounding boxes with rolling spatio-temporal dynamics and automated emergency alerts under real-time constraints.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">IEEE Xplore Published</span>
+            <span class="pill">First Author</span>
+            <span class="pill">Rolling Centroid Velocity</span>
+            <span class="pill">F1-Score: 0.947</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://ieeexplore.ieee.org/document/11691839" target="_blank" rel="noopener" class="pixel-btn small-btn cyan-btn">
+              <span>IEEE XPLORE</span> &rarr;
+            </a>
+            <a href="https://github.com/NithinReddy22" target="_blank" rel="noopener" class="pixel-btn small-btn secondary-btn">
+              <span>CODE</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Quest 3: IEEE SCEECS 2026 -->
+        <article class="quest-card quest-epic" data-category="ai">
+          <div class="quest-badge">PEER-REVIEWED // IEEE SCEECS 2026</div>
+          <h3 class="quest-title">YOLOv8-Driven Spatio-Temporal Clinical Movement Detection</h3>
+          <p class="quest-desc">
+            Formulated a lightweight edge vision framework detecting risk-prone patient departures and fall precursors, deploying ambient room heuristics to autonomously suppress false alarms when clinical staff (N &ge; 2) are present.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">IEEE Conference</span>
+            <span class="pill">First Author</span>
+            <span class="pill">Context Heuristics</span>
+            <span class="pill">Zero Cloud Leakage</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener" class="pixel-btn small-btn cyan-btn">
+              <span>IEEE PROCEEDINGS</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Quest 4: LSM-Tree Storage Engine -->
+        <article class="quest-card quest-rare" data-category="systems">
+          <div class="quest-badge">SYSTEMS CORE // MODERN C++20</div>
+          <h3 class="quest-title">LSM-Tree Embedded Key-Value Storage Engine</h3>
+          <p class="quest-desc">
+            Built an embedded persistent storage engine in C++20 featuring append-only Write-Ahead Logging (WAL) for crash recovery, in-memory SkipList MemTable, binary-indexed SSTables, Bloom filters, and tiered background Compaction for tombstone reclamation.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">Modern C++20</span>
+            <span class="pill">Write-Ahead Log</span>
+            <span class="pill">Bloom Filters</span>
+            <span class="pill">SkipList MemTable</span>
+            <span class="pill">Tiered Compaction</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://github.com/NithinReddy22" target="_blank" rel="noopener" class="pixel-btn small-btn secondary-btn">
+              <span>GITHUB ENGINE</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Quest 5: Raft Distributed KV Store -->
+        <article class="quest-card quest-rare" data-category="systems">
+          <div class="quest-badge">DISTRIBUTED // FAULT TOLERANCE</div>
+          <h3 class="quest-title">Raft Distributed Consensus Key-Value Store</h3>
+          <p class="quest-desc">
+            Implemented the Raft consensus algorithm from scratch covering randomized leader election, heartbeat RPCs, and log replication. Engineered a chaos test harness simulating network partitions to verify linearizable consistency and split-brain immunity.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">Raft Protocol</span>
+            <span class="pill">Chaos Network Partition Harness</span>
+            <span class="pill">Linearizable Consistency</span>
+            <span class="pill">Atomic CAS Ops</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://github.com/NithinReddy22" target="_blank" rel="noopener" class="pixel-btn small-btn secondary-btn">
+              <span>CONSENSUS REPO</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Quest 6: Springer Nature ESPR 2026 -->
+        <article class="quest-card quest-special" data-category="ai">
+          <div class="quest-badge">JOURNAL // SPRINGER NATURE 2026</div>
+          <h3 class="quest-title">Sustainable Seaweed Production & Blue Economy</h3>
+          <p class="quest-desc">
+            Co-authored multidisciplinary research published in <em>Environmental Science and Pollution Research (ESPR)</em> linking data modeling, environmental sensing technology, and sustainable ecology for resilient coastal ecosystems.
+          </p>
+          <div class="quest-mechanics">
+            <span class="pill">Springer Nature (ESPR)</span>
+            <span class="pill">Q1 Journal</span>
+            <span class="pill">Data Modeling</span>
+            <span class="pill">Environmental AI</span>
+          </div>
+          <div class="quest-actions">
+            <a href="https://link.springer.com" target="_blank" rel="noopener" class="pixel-btn small-btn gold-btn">
+              <span>SPRINGERLINK</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INVENTORY / ARSENAL (TECH STACK) -->
+    <section class="pixel-panel section-panel" id="inventory">
+      <div class="panel-header">
+        <span class="panel-tag">[EQUIPPED INVENTORY // ARSENAL]</span>
+        <span class="panel-status">SLOTS: 24 / 24 EQUIPPED</span>
+      </div>
+
+      <div class="inventory-categories">
+
+        <!-- Weapons: Languages -->
+        <div class="inventory-block">
+          <h4 class="inventory-title">⚔️ PRIMARY WEAPONS (LANGUAGES)</h4>
+          <div class="item-grid">
+            <div class="item-slot"><span class="item-icon">⚡</span> <span class="item-name">C++20</span></div>
+            <div class="item-slot"><span class="item-icon">🐍</span> <span class="item-name">Python</span></div>
+            <div class="item-slot"><span class="item-icon">☕</span> <span class="item-name">Java</span></div>
+            <div class="item-slot"><span class="item-icon">🔷</span> <span class="item-name">C# .NET</span></div>
+            <div class="item-slot"><span class="item-icon">🗄️</span> <span class="item-name">SQL</span></div>
+            <div class="item-slot"><span class="item-icon">📜</span> <span class="item-name">TypeScript</span></div>
+          </div>
+        </div>
+
+        <!-- Armor & Core: Systems & Distributed -->
+        <div class="inventory-block">
+          <h4 class="inventory-title">🛡️ SHIELDS & ENGINES (SYSTEMS & DISTRIBUTED)</h4>
+          <div class="item-grid">
+            <div class="item-slot"><span class="item-icon">🧱</span> <span class="item-name">LSM-Trees</span></div>
+            <div class="item-slot"><span class="item-icon">🛰️</span> <span class="item-name">Raft Protocol</span></div>
+            <div class="item-slot"><span class="item-icon">📝</span> <span class="item-name">WAL Logging</span></div>
+            <div class="item-slot"><span class="item-icon">🔍</span> <span class="item-name">Bloom Filters</span></div>
+            <div class="item-slot"><span class="item-icon">📑</span> <span class="item-name">SSTables</span></div>
+            <div class="item-slot"><span class="item-icon">⚙️</span> <span class="item-name">CMake</span></div>
+          </div>
+        </div>
+
+        <!-- Vision Spells: AI & Vision -->
+        <div class="inventory-block">
+          <h4 class="inventory-title">🔮 VISION SPELLS (AI & COMPUTER VISION)</h4>
+          <div class="item-grid">
+            <div class="item-slot"><span class="item-icon">👁️</span> <span class="item-name">YOLOv8</span></div>
+            <div class="item-slot"><span class="item-icon">🌀</span> <span class="item-name">TTA (TENT/SHOT)</span></div>
+            <div class="item-slot"><span class="item-icon">🔥</span> <span class="item-name">PyTorch</span></div>
+            <div class="item-slot"><span class="item-icon">📷</span> <span class="item-name">OpenCV</span></div>
+            <div class="item-slot"><span class="item-icon">📊</span> <span class="item-name">Scikit-Learn</span></div>
+            <div class="item-slot"><span class="item-icon">⏱️</span> <span class="item-name">Spatio-Temporal</span></div>
+          </div>
+        </div>
+
+        <!-- Artifacts: Full-Stack & Tooling -->
+        <div class="inventory-block">
+          <h4 class="inventory-title">🧪 ALCHEMY LAB (FRAMEWORKS & CLOUD)</h4>
+          <div class="item-grid">
+            <div class="item-slot"><span class="item-icon">🍃</span> <span class="item-name">Spring Boot</span></div>
+            <div class="item-slot"><span class="item-icon">⚛️</span> <span class="item-name">React 18</span></div>
+            <div class="item-slot"><span class="item-icon">⚡</span> <span class="item-name">Vite</span></div>
+            <div class="item-slot"><span class="item-icon">🐳</span> <span class="item-name">Docker</span></div>
+            <div class="item-slot"><span class="item-icon">🔄</span> <span class="item-name">CI/CD Actions</span></div>
+            <div class="item-slot"><span class="item-icon">🧪</span> <span class="item-name">Jest / Pytest</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DUNGEON LOG: CAREER & EXP -->
+    <section class="pixel-panel section-panel" id="experience">
+      <div class="panel-header">
+        <span class="panel-tag">[EXP TIMELINE // DUNGEON LOG]</span>
+        <span class="panel-status">RECORDED SESSIONS</span>
+      </div>
+
+      <div class="timeline-container">
+
+        <div class="timeline-node">
+          <div class="node-marker"></div>
+          <div class="node-content">
+            <div class="node-header">
+              <span class="node-title">Software Systems Engineer</span>
+              <span class="node-badge">AUG 2026 &mdash; PRESENT</span>
+            </div>
+            <div class="node-org">Psiog Digital &bull; Chennai, India</div>
+            <p class="node-desc">
+              Architecting full-stack enterprise modules with React 18 frontend and Spring Boot microservices on the backend. Designing resilient REST APIs and relational database persistence workflows for high-concurrency client systems with automated Jest and JUnit regression suites.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-marker"></div>
+          <div class="node-content">
+            <div class="node-header">
+              <span class="node-title">Graduate Engineer Trainee (Intern)</span>
+              <span class="node-badge">FEB 2026 &mdash; JULY 2026</span>
+            </div>
+            <div class="node-org">Psiog Digital &bull; Chennai, India</div>
+            <p class="node-desc">
+              Constructed modular enterprise backend services in C# and .NET Core utilizing clean Object-Oriented Design patterns. Formulated optimized SQL Server queries, stored procedures, and migration scripts for client data backends.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-marker"></div>
+          <div class="node-content">
+            <div class="node-header">
+              <span class="node-title">B.Tech in Computer Science and Engineering</span>
+              <span class="node-badge">OCT 2022 &mdash; JUNE 2026</span>
+            </div>
+            <div class="node-org">Amrita Vishwa Vidyapeetham &bull; Overall GPA: 7.77 / 10.0</div>
+            <p class="node-desc">
+              Strong upward academic trajectory: <strong>Last 2 Years GPA: ~8.4/10.0; Final Year SGPA: 9.0+/10.0</strong>. Authored 3 undergraduate publications. Awarded UNESCO Chair Certification in Experiential Learning &amp; Sustainable Innovation through Live-in-Labs research.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE OASIS COMMAND TERMINAL -->
+    <section class="pixel-panel terminal-panel" id="terminal">
+      <div class="panel-header">
+        <span class="panel-tag">[OASIS TERMINAL // CLI EMULATOR]</span>
+        <span class="panel-status">TYPE 'help' OR CLICK COMMANDS</span>
+      </div>
+
+      <div class="terminal-body" id="terminalOutput">
+        <div class="term-line banner-line">===============================================================</div>
+        <div class="term-line banner-line"> READY PLAYER ONE: OASIS TERMINAL // PULUPUTTURI NITHIN REDDY</div>
+        <div class="term-line banner-line">===============================================================</div>
+        <div class="term-line">System status: ALL ENGINES OPERATIONAL. Type <span class="term-cmd">help</span> to begin.</div>
+      </div>
+
+      <!-- Quick Command Buttons -->
+      <div class="terminal-quick-bar">
+        <button class="term-btn" data-cmd="help">help</button>
+        <button class="term-btn" data-cmd="about">about</button>
+        <button class="term-btn" data-cmd="skills">skills</button>
+        <button class="term-btn" data-cmd="papers">papers</button>
+        <button class="term-btn" data-cmd="gre">gre</button>
+        <button class="term-btn" data-cmd="contact">contact</button>
+        <button class="term-btn" data-cmd="clear">clear</button>
+      </div>
+
+      <form class="terminal-input-row" id="terminalForm">
+        <span class="prompt-symbol">player@oasis:~$</span>
+        <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="Type command here..." autofocus>
+      </form>
+    </section>
+
+    <!-- TRANSMIT / CONTACT MODULE -->
+    <section class="pixel-panel section-panel" id="contact">
+      <div class="panel-header">
+        <span class="panel-tag">[TRANSMISSION TERMINAL // CONTACT]</span>
+        <span class="panel-status">UPLINK ACTIVE</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 class="contact-title">READY TO COLLABORATE?</h3>
+          <p class="contact-text">
+            Currently applying for thesis-based <strong>M.Sc. / M.A.Sc. positions for Fall 2027</strong> in Canada and top research labs globally. Open to discussions on edge computer vision, test-time adaptation, distributed storage engines, and high-performance systems engineering.
+          </p>
+
+          <div class="comms-channel-list">
+            <div class="channel-row">
+              <span class="channel-label">EMAIL:</span>
+              <a href="mailto:puluputturi.nithinreddy@gmail.com" class="channel-val">puluputturi.nithinreddy@gmail.com</a>
+              <button class="pixel-btn copy-btn" id="copyEmailBtn" data-copy="puluputturi.nithinreddy@gmail.com">COPY</button>
+            </div>
+            <div class="channel-row">
+              <span class="channel-label">GITHUB:</span>
+              <a href="https://github.com/NithinReddy22" target="_blank" rel="noopener" class="channel-val">github.com/NithinReddy22</a>
+            </div>
+            <div class="channel-row">
+              <span class="channel-label">LINKEDIN:</span>
+              <a href="https://www.linkedin.com/in/nithinnreddy6" target="_blank" rel="noopener" class="channel-val">linkedin.com/in/nithinnreddy6</a>
+            </div>
+            <div class="channel-row">
+              <span class="channel-label">BASE:</span>
+              <span class="channel-val">Tirupati / Chennai, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transmission Box -->
+        <div class="transmit-box">
+          <h4 class="transmit-subtitle">QUICK DISPATCH DISK</h4>
+          <p class="transmit-instructions">Send an instant transmission to initiate dialogue:</p>
+
+          <form id="contactForm" class="pixel-form" onsubmit="event.preventDefault(); window.location.href='mailto:puluputturi.nithinreddy@gmail.com?subject=' + encodeURIComponent(document.getElementById('msgSubject').value) + '&body=' + encodeURIComponent(document.getElementById('msgBody').value);">
+            <div class="form-group">
+              <label for="msgSubject">SUBJECT // HEADING</label>
+              <input type="text" id="msgSubject" class="pixel-input" placeholder="e.g. M.Sc. Research Discussion / Opportunity" required>
+            </div>
+            <div class="form-group">
+              <label for="msgBody">TRANSMISSION CONTENT</label>
+              <textarea id="msgBody" rows="4" class="pixel-input" placeholder="Type transmission payload..." required></textarea>
+            </div>
+            <button type="submit" class="pixel-btn primary-btn submit-btn">
+              <span>🚀 DISPATCH TRANSMISSION</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RETRO FOOTER -->
+  <footer class="oasis-footer">
+    <div class="footer-content">
+      <div class="footer-credit">
+        <span class="gold-text">&copy; 2026 PULUPUTTURI NITHIN REDDY</span> &bull; READY PLAYER ONE OASIS PORTFOLIO
+      </div>
+      <div class="footer-quote">
+        "PEOPLE COME TO THE OASIS FOR ALL THE THINGS THEY CAN DO, BUT THEY STAY FOR ALL THE THINGS THEY CAN BE."
+      </div>
+      <div class="footer-status">
+        SYSTEM STATUS: ONLINE &bull; 0 LATENCY &bull; 100% DISCOVERY
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
